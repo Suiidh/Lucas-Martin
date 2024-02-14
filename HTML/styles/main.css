@@ -1,0 +1,128 @@
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../assets/font/Source_Sans_Pro/OFL.txt\ Pro-Regular.woff') format('woff');
+}
+
+:root {
+    --primary-color: #ff5e33;
+    --secondary-color: #ff9933;
+    --transition-color: #eeeff5
+}
+
+/******************************************************* STRUCTURE **********************************************************/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: 'Source Sans Pro', sans-serif;
+    color: var(--primary-color);
+    font-weight: 700;
+    line-height: 120%;
+    margin-bottom: 10px;
+}
+
+h1 {
+    font-size: 2.3125rem;
+    font-size: clamp(2rem, 3.7vw, 2.75rem);
+}
+
+h2 {
+    font-size: 2.1875rem;
+    font-size: clamp(2rem, 3.5vw, 2.5rem);
+}
+
+h3 {
+    font-size: 2.3125rem;
+    font-size: clamp(2rem, 3.7vw, 2.1875rem);
+}
+
+h4 {
+    font-size: 2.3125rem;
+    font-size: clamp(2rem, 3.7vw, 1.875rem);
+    font-weight: 500
+}
+
+h5 {
+    font-size: 2.3125rem;
+    font-size: clamp(2rem, 3.7vw, 1.5625rem);
+    font-weight: 500
+}
+
+h6 {
+    font-size: 2.3125rem;
+    font-size: clamp(2rem, 3.7vw, 1.25rem);
+    font-weight: 400
+}
+
+p {
+    line-height: 120%;
+    margin: 10px 0;
+}
+
+section {
+    margin: 2em 0;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    display: inline-block;
+}
+
+.contient {
+    width: 90%;
+    margin: auto;
+}
+
+/******************************************************* BARNAV **********************************************************/
+
+.barnav {
+    position: fixed;
+    width: 100%;
+    z-index: 9999;
+    background: rgba(180, 97, 2, 0.6);
+}
+
+.barnav ul {
+    list-style: none;
+}
+
+.barnav-contenu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 2em;
+}
+
+.barnav .logo {
+    max-height: 55px;
+    padding: 10px 0;
+}
+
+.barnav-lien ul {
+    display: flex;
+    gap: 10px;
+}
+
+.section-barnav {
+    margin: 0;
+}
+
+/******************************************************* FOOTER **********************************************************/
+
+.footer {
+    background: var(--secondary-color);
+    text-align: center;
+}

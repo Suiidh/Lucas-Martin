@@ -1,0 +1,116 @@
+/******************************************************* MAIN **********************************************************/
+
+.banniere {
+    background: center / cover url('../assets/profil/banniere2.jpg');
+    justify-content: flex-end;
+    display: flex;
+    height: 1000px;
+    align-items: center;
+}
+
+.titre-banniere {
+    margin-right: 45em;
+    max-width: 40%;
+    background: rgba(180, 97, 2, 0.6);
+    border-radius: 14px;
+    backdrop-filter: blur(5px);
+    padding: 2em;
+}
+
+@media (max-width: 1024px) {
+    .titre-banniere {
+        flex: 100%;
+        max-width: 70%;
+        margin: auto;
+        text-align: center;
+    }
+}
+
+.separateur {
+    border: none;
+    border-top: 1px solid var(--secondary-color);
+}
+
+/******************************************************* PRÉSENTATION **********************************************************/
+
+.presentation {
+    margin-top: 3em;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: space-between;
+}
+
+.presentation-age {
+    font-size: 25px;
+}
+
+.black {
+    color: black;
+}
+
+.presentation-img {
+    width: 30%;
+}
+
+.presentation-img img {
+    width: 100%;
+}
+
+.presentation-desc {
+    width: 65%;
+}
+
+@media (max-width:1024px) {
+
+    .presentation-img,
+    .presentation-desc {
+        width: 100%;
+    }
+
+    .presentation-desc {
+        margin-top: 1em;
+        text-align: center;
+    }
+}
+
+.texte-important {
+    color: red;
+    font-weight: bolder;
+}
+
+.btn-secondaire {
+    background-color: var(--primary-color);
+
+}
+
+.text-center {
+    text-align: center;
+}
+
+.liste-etiquette {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.etiquette {
+    background-color: var(--secondary-color);
+    border-radius: 8px;
+    padding: 10px;
+    margin: 2em 0 0 2em;
+    align-items: center;
+    display: flex;
+    color: #ff5e33;
+}
+
+.etiquette p {
+    margin: 0 0 0 5px;
+}
+
+@media (max-width:1024px) {
+    .liste-etiquette {
+        display: grid;
+        padding: 6em;
+    }
+
+}
